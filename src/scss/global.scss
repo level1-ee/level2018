@@ -1,0 +1,158 @@
+// # SETTINGS
+//   Global variables and config
+@import "settings.variables";
+
+// # TOOLS
+//   Mixins and functions
+@import "tools.mixins";
+
+// # BASE/GENERIC
+@import "../../node_modules/normalize.css/normalize";
+@import "base.reset";
+
+// # ELEMENTS
+//   Unclassed elements
+@import "base.body";
+
+// # OBJECTS
+//   Cosmetic-free abstractions, and design patterns
+@import "objects.wrap";
+
+// # UTILITIES
+//   Single class helpers for quick styling
+
+// # COMPONENTS
+//   Chunks of ui
+
+canvas {
+  cursor: crosshair;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.c-hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  h1 {
+    color: $primary;
+    font-size: calc(7vw + 7vh);
+    font-weight: $font-weight-thin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.c-content {
+  margin-bottom: 200px;
+
+  ul {
+    list-style: none;
+    font-size: rem-calc(20px);
+
+    @include mq(1024px) {
+      font-size: rem-calc(50px);
+    }
+  }
+
+  a {
+    border-bottom: 3px dotted $primary;
+    text-decoration: none;
+    color: $primary;
+  }
+
+  p {
+    font-size: rem-calc(20px);
+
+    @include mq(1024px) {
+      font-size: rem-calc(40px);
+    }
+    strong {
+      color: $primary;
+      font-weight: $font-weight-regular;
+    }
+  }
+
+  h2 {
+    font-size: calc(5vw + 5vh);
+    line-height: 0.9;
+    font-weight: $font-weight-thin;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+    color: $primary;
+
+    @include mq(800px) {
+      font-size: calc(7vw + 7vh);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.c-video {
+  margin-bottom: 200px;
+  height: 400px;
+
+  @include mq(1024px) {
+    height: 800px;
+  }
+
+  iframe {
+    border-radius: 150px;
+    border: 1px solid $primary;
+    width: 100%;
+    height: 400px;
+
+    @include mq(1024px) {
+      height: 800px;
+    }
+  }
+}
+
+.c-form {
+  margin-bottom: 200px;
+
+  p {
+    color: $white;
+    margin-bottom: 1em;
+    font-size: rem-calc(20px);
+
+    @include mq(1024px) {
+      font-size: rem-calc(40px);
+    }
+  }
+
+  #mc_embed_signup_scroll {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    background-color: transparent;
+    color: $primary;
+    border: none;
+    border: 1px solid $primary;
+    width: 100%;
+    outline: none;
+    padding: 15px 20px;
+    font-size: rem-calc(20);
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    margin-top: 10px;
+    color: $primary;
+    background: transparent;
+  }
+}

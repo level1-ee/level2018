@@ -1,0 +1,14 @@
+.o-wrap {
+  max-width: rem-calc(1420px + $gutter * 2);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 rem-calc($gutter);
+
+  &--md {
+    max-width: rem-calc(1290px + $gutter * 2);
+  }
+
+  &--sm {
+    max-width: rem-calc(1160px + $gutter * 2);
+  }
+}

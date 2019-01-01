@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "rules": {
+    "func-names": "off",
+    "semi": ["error", "never"],
+    "object-curly-newline": "off",
+    "no-restricted-syntax": [
+      2,
+      "forinstatement",
+      "labeledstatement",
+      "withstatement"
+    ]
+  }
+}

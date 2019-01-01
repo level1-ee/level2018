@@ -1,0 +1,23 @@
+// Colors
+$primary: #00ffb2;
+$primary-dark: #00130d;
+$white: #fff;
+$text-color: $white;
+$bg-color: $primary-dark;
+
+// Typography
+$system-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family: "IBM Plex Mono", $system-font-stack;
+
+$font-weight-thin: 100;
+$font-weight-regular: 400; // Body text font weight uses light variation of Roboto;
+$font-weight-bold: 700;
+
+$z-index: (
+  header: 1000
+);
+
+// Sizing
+$gutter: 40px;
